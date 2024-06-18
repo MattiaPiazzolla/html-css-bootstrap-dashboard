@@ -7,19 +7,23 @@
 /* STRUCTURE DEFINITION CLASSES */
 
 /* HEADER */
-.container-header{
-    background-color: #F8F9FB;
-    height: 50px;
+header{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    height: 50px;
+    background-color: red;
 }
 
 .content-header{
     background-color: red;
     height: 40px;
     margin-top: 5px;
+}
+
+.h-custom-40{
+    height: 40px;
 }
 
 /* MAIN GENERAL */
@@ -59,9 +63,14 @@ main{
 }
 .content-main-header{
     height: 75px;
+    width: 100%;
     background-color: blueviolet;
+    position: fixed;
+    top: 56px;
 }
-
+.mt-75px{
+    margin-top: 75px;
+}
 .content-main{
     background-color: #F8F9FB;
     height: 100px;
