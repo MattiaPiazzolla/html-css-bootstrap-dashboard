@@ -42,6 +42,19 @@ header .logo-mobile{
     border: none;
 }
 
+
+                                                /* CHIEDI */
+.dropdown-menu-end{
+    right: 10px !important;
+}
+
+.dropdown-menu{
+    top: 75% !important;
+}
+                                                /* CHIEDI */
+
+
+
 .dropdown-toggle::after {
     display: none;
 }
