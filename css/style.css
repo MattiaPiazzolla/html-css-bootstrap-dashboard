@@ -7,13 +7,13 @@
 /* STRUCTURE DEFINITION CLASSES */
 
 /* HEADER */
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    background-color: red;
+
+header .logo-mobile{
+    height: 37.5px;
+}
+
+.bg-header{
+    background-color: #F8F9FB;
 }
 
 .content-header{
@@ -26,18 +26,52 @@ header{
     height: 40px;
 }
 
+
+.search-bar-container {
+    position: relative;
+    width: 100%;
+}
+.search-bar-custom {
+    width: 100%;
+    padding-left: 25px; 
+    background-color: #E5E5E5;
+}
+
+.dropdown-toggle{
+    background-color: #fff;
+    border: none;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.search-bar-icon{
+    color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.text-darkgrey{
+    color: #5A5657
+}
+
 /* MAIN GENERAL */
 
 main{
-    margin-top: 50px;
-    height: calc(100vh - 50px);
+    margin-top: 54px;
+    height: calc(100vh - 54px);
     background-color: azure;
 }
 
 /* SIDEBAR */
 
 .sidebar{
-    height: calc(100vh - 50px);
+    height: calc(100vh - 54px);
     background-color: blue;
     display: flex;
     flex-direction: column;
@@ -58,7 +92,7 @@ main{
 
 .main-container{
     background-color: purple;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 54px);
     overflow: auto;
 }
 .content-main-header{
@@ -66,7 +100,8 @@ main{
     width: 100%;
     background-color: blueviolet;
     position: fixed;
-    top: 56px;
+    top: 54px;
+    z-index: 1;
 }
 .mt-75px{
     margin-top: 75px;
@@ -75,3 +110,5 @@ main{
     background-color: #F8F9FB;
     height: 100px;
 }
+
+

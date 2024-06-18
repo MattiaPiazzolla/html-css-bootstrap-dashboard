@@ -11,23 +11,41 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
+    <header class="position-fixed top-0 left-0 right-0 w-100 z-3">
         <div class="container-fluid gx-0">
             <div class="row">
                 <div class="col-12">
-                    <nav class="navbar navbar-expand h-custom-40">
-                        <div class="container-fluid bg-white">
-                          <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt=""></a>
-                            <form class="d-flex" role="search">
-                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <nav class="navbar bg-header">
+                        <div class="container-fluid d-flex align-items-center bg-white gx-3">
+                            <a class="navbar-brand d-flex align-items-center me-3" href="#">
+                                <img src="./img/logo.svg" alt="logo" class="align-self-center d-none d-lg-block">
+                                <img src="./img/mobile-logo.png" alt="logo" class="logo-mobile d-lg-none">
+                            </a>
+                            <form action="" class="flex-grow-1">
+                                <div class="search-bar-container">
+                                    <a class="search-bar-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    <input type="search" class="form-control search-bar-custom" placeholder="Prova a cercare: Lezioni di Laravel">
+                                </div>
                             </form>
+                            <div class="buttons-navbar">
+                                <a href="" class="ms-2 text-darkgrey d-none d-lg-inline-block"><i class="fa-solid fa-list"></i></a>
+                                <a href="" class="ms-2 text-darkgrey d-none d-lg-inline-block"><i class="bi bi-question-circle-fill"></i></a>
+                                <a href="" class="ms-2 text-darkgrey d-none d-lg-inline-block"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                <button class="text-warning dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-bell">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                            </div>
                         </div>
-                      </nav>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>
     </header>
+
     <!-- MAIN -->
      <main>
         <div class="container-fluid gx-0">
