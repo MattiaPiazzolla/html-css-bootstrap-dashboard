@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STRUCTURE DEFINITION CLASSES */
+
+/* HEADER */
+.container-header{
+    background-color: #F8F9FB;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.content-header{
+    background-color: red;
+    height: 40px;
+    margin-top: 5px;
+}
+
+/* MAIN GENERAL */
+
+main{
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+    background-color: azure;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    height: calc(100vh - 50px);
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-content-top{
+    height: 200px;
+    background-color: yellow;
+}
+
+.sidebar-content-bottom{
+    height: 50px;
+    background-color: green;
+}
+
+/* MAIN-CONTENT */
+
+.main-container{
+    background-color: purple;
+    height: calc(100vh - 50px);
+    overflow: auto;
+}
+.content-main-header{
+    height: 75px;
+    background-color: blueviolet;
+}
+
+.content-main{
+    background-color: #F8F9FB;
+    height: 100px;
+}
