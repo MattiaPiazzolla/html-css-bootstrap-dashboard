@@ -84,44 +84,95 @@ main{
 /* SIDEBAR */
 
 .sidebar{
-    height: calc(100vh - 54px);
-    background-color: blue;
+    height: calc(100vh - 63.5px);
+    width: 50px;
+    margin-top: 10px;
+    background-color: #051E34;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-image: url("../img/sidebar-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 35px;
 }
 
-.sidebar-content-top{
-    height: 200px;
-    background-color: yellow;
+.sidebar-content-top i, .sidebar-content-bottom i{
+    width: 100%;
 }
 
-.sidebar-content-bottom{
-    height: 50px;
-    background-color: green;
-}
+
+
+
+
 
 /* MAIN-CONTENT */
 
 .main-container{
-    background-color: purple;
-    height: calc(100vh - 54px);
+    height: calc(100vh - 53.5px);
+    width: calc(100vw - 50px);
     overflow: auto;
+    background-color: #F8F9FD;
 }
+/* MAIN HEADER */
+
+.pill-bg{
+    background-color: #1959BA;
+    font-size: 9px;
+}
+
+.symbol-pill{
+    font-size:12.5px;
+}
+
 .content-main-header{
-    height: 75px;
     width: 100%;
-    background-color: blueviolet;
+    background-color: #1B71E8;
     position: fixed;
-    top: 54px;
+    top: 63.5px;
     z-index: 1;
 }
-.mt-75px{
-    margin-top: 75px;
+
+.text-main-header-sm{
+    font-size: 12.5PX;
 }
+
+.mt-75px{
+    margin-top: 85px;
+}
+
+.mt-175{
+    margin-top: 175px;
+}
+
 .content-main{
-    background-color: #F8F9FB;
+    background-color: red;
     height: 100px;
 }
+
+
+@media screen and (min-width: 991px) {
+    .sidebar-content-top i, .sidebar-content-bottom i{
+        width: 30px;
+    }
+
+    .main-container{
+        height: calc(100vh - 54px);
+        width: calc(100vw - 125px);
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .content-main-header{
+        top: 54px;
+    }
+
+    .sidebar{
+        height: calc(100vh - 50px);
+        margin-top: 0;
+        width: 125px;
+    }
+}
+
 
 
