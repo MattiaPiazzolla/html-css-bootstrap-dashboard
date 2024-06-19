@@ -141,13 +141,53 @@ main{
     margin-top: 85px;
 }
 
-.mt-175{
-    margin-top: 175px;
+.mt-main-body{
+    margin-top: 180px;
 }
 
 .content-main{
     background-color: red;
     height: 100px;
+}
+
+.btn{
+    padding: 2.5px 10px ;
+    font-size: 15px;
+}
+
+.btn:hover{
+    background-color: #1256b5;
+    color: #fff;
+}
+
+.img-table{
+    width: 25px;
+}
+
+
+.fs-custom-12{
+    font-size: 12.5px;
+}
+
+.fs-custom-table{
+    font-size: 10px;
+}
+
+.btn-custom{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #817d81;
+    color: #817d81;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .mt-main-body{
+        margin-top: 83px;
+    }
 }
 
 
@@ -171,6 +211,10 @@ main{
         height: calc(100vh - 50px);
         margin-top: 0;
         width: 125px;
+    }
+
+    .mt-main-body{
+        margin-top: 70px;
     }
 }
 
