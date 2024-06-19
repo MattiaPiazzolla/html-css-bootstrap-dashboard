@@ -10,6 +10,79 @@
     <title>Boostrap Dasboard</title>
 </head>
 <body>
+
+    <div class="offcanvas offcanvas-end offcanva-w" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h6 class="">Inserisci un nuovo studente</h6>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body fs-custom-12">
+            <form action="">
+                <div class="row">
+                    <div class="col-12 col-md-6 mt-2">
+                        <label for="inputName">Nome</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="col-12 col-md-6 mt-2">
+                        <label for="inputSurn">Cognome</label>
+                        <input type="text" class="form-control" id="inputSurname">
+                    </div>
+                    <div class="col-12 col-md-6 mt-2">
+                        <label for="inputEmail4">Email</label>
+                        <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                              </div>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mt-2">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12 col-md-12 mt-2">
+                        <label for="inputAddress">Indirizzo</label>
+                        <input type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="col-12 col-md-6 mt-2">
+                        <label for="inputCity">Città</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-12 col-md-4 mt-2">
+                        <label for="inputState">Stato</label>
+                        <div class="select">
+                            <select class="select-h" name="state" id="inputState">
+                                <option value="" disabled selected>Scegli...</option>
+                                <option value="1">Italia</option>
+                                <option value="2">Spagna</option>
+                                <option value="3">Austria</option>
+                                <option value="4">Egitto</option>
+                                <option value="5">Stati Uniti</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 mt-2">
+                        <label for="inputCap">CAP</label>
+                        <input type="text" class="form-control" id="inputCap">
+                    </div>
+                    <div class="col-12 col-md-12 mt-2">
+                        <label for="inputPhoto">Foto</label>
+                        <input type="file" class="form-control" id="inputPhoto">
+                    </div>
+                    <div class="col-12 col-md-12 mt-2">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                            <label class="custom-control-label" for="customControlAutosizing">Seleziona per proseguire</label>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-12 mt-1">
+                        <button type="button" class="btn btn-primary">Salva</button>
+                        <button type="button" class="btn btn-warning">Svuota</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
     <!-- HEADER -->
     <header class="position-fixed top-0 left-0 right-0 w-100 z-3">
         <div class="container-fluid gx-0">
@@ -96,17 +169,8 @@
                                     <div class="col-12 col-md-3 col-lg-2 text-white order-0 order-md-1">
                                         <p class="text-main-header-sm mb-0 text-md-end d-inline-block">Nuovo Studente 
                                         </p>
-                                        <button class="btn btn btn-outline-light ms-2 mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                                        <button class="btn btn-outline-light ms-2 mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
 
-                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                        <div class="offcanvas-header">
-                                            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-                                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                        </div>
-                                        <div class="offcanvas-body">
-                                            ...
-                                        </div>
-                                        </div>
                                         <!-- <a href="" class="text-white text-decoration-none">
                                             <div class="btn btn-outline-light ms-2 mb-0">+</div>
                                         </a> -->
